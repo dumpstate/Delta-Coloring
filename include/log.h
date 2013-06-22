@@ -25,7 +25,12 @@
 							") -> " << a << " " << b << " " << c << " " << \
 							d << " " << e << " " << f << std::endl
 #else
-	#define LOG(...)
+	#define LOG1(...)
+	#define LOG2(...)
+	#define LOG3(...)
+	#define LOG4(...)
+	#define LOG5(...)
+	#define LOG6(...)
 #endif
 
 #endif //DELTACOLORING_LOG
