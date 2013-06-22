@@ -9,6 +9,7 @@ namespace dColoring {
 		graphinfo_writer(int colors, int components, int delta_g)
 			: mColors(colors), mComponents(components), mDeltaG(delta_g) { }
 		void operator()(std::ostream& out) const {
+			LOG1("graphinfo_writer");
 			out << "node[shape=\"circle\",style=\"filled\"]\n";
 			out << "col[label=\"Colors: " << mColors << "\",shape=\"box\"];\n";
 			out << "com[label=\"Components: " << mComponents << "\",shape=\"box\"];\n";

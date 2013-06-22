@@ -11,6 +11,7 @@ namespace dColoring {
 			: mMap(map) { }
 		template<class Edge>
 		void operator()(std::ostream& out, const Edge& e) const {
+			LOG2("component_writer", e);
 			out << "[label=\"" << get(mMap, e) << "\"]";
 		};
 	private:

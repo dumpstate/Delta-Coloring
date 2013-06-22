@@ -15,10 +15,14 @@ namespace dColoring {
 	void write_graph_to_dot(
 		const Graph& graph, const ColorMap& color, const ComponentMap& component, 
 		ostream& out, const int num_col, const int num_comp, const int delta_g) {
+		LOG1("new color_writer");
 		color_writer<ColorMap> col_w(color, COLOR_WITH_COLORS);
+		LOG1("new component_writer");
 		component_writer<ComponentMap> comp_w(component);
+		LOG1("new graphinfo_writer");
 		graphinfo_writer ginfo_w(num_col, num_comp, delta_g);
 
+		LOG1("calling write_graphviz");
 		write_graphviz(out, graph, col_w, comp_w, ginfo_w);
 	}
 }
