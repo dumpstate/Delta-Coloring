@@ -1,5 +1,6 @@
 #define DEBUG
 
+#include "../include/log.h"
 #include "../include/types.h"
 #include "../include/ParameterParser.hpp"
 #include "../include/ColoringMode.hpp"
@@ -45,11 +46,10 @@ int main(int argc, char* argv[]){
 	vector<Graph> components(num_comps);
 	vector<property_map<Graph, vertex_color_t>::type> colors(num_comps);
 	for(int i = 0; i < num_comps; i++) {
-		std::cerr << "i: " << i << ", num_comps: " << num_comps << std::endl;
+		LOG1("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		LOG4("i:", i, ", num_comps:", num_comps);
 		components[i] = get_component(graph, component, i, old_to_new[i]);
-		std::cerr << "calling get" << std::endl;
 		colors[i] = get(vertex_color, components[i]);
-		std::cerr << "calling component_delta_coloring" << std::endl;
 		component_delta_coloring(components[i], colors[i]);
 	}
 

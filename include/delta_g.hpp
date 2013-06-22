@@ -13,10 +13,11 @@ namespace dColoring {
 		int max_degree = 0;
 		BOOST_FOREACH(Vertex v, vertices(graph)) {
 			int degr = degree(v, graph);
+			LOG4("vertex v =", v, " degree =", degr);
 			if(degr > max_degree)
 				max_degree = degr;
 		}
-
+		LOG2("max degree: ", max_degree);
 		return max_degree;
 	}
 }

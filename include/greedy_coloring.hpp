@@ -48,6 +48,8 @@ namespace dColoring {
 			++i;
 		}
 
+		LOG2("colors: ", colors);
+
 		return colors;
 	}
 

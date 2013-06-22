@@ -47,11 +47,9 @@ namespace dColoring {
 		typedef typename property_traits<ColorMap>::value_type size_type;
 
 		// 0
-		cerr << "num_vertices: " << num_vertices(graph) << endl;
+		LOG2("num_vertices: ", num_vertices(graph));
 		if(num_vertices(graph) <= 3) {
-			#ifdef DEBUG
-			cerr << "component_delta_coloring - component smaller than 3" << std::endl;
-			#endif
+			LOG1("component_delta_coloring - component smaller than or equal 3");
 			return greedy_coloring(graph, color);
 		}
 
@@ -64,26 +62,22 @@ namespace dColoring {
 
 		vector<pair<Vertex, int> > distances;
 
-		#ifdef DEBUG
-		cerr << "[1 b.] Distances to W:" << endl;
-		#endif
+		LOG1("[1 b.] Distances to W:");
 		BOOST_FOREACH(Vertex vi, vertices(graph)) {
 			if(vi == uwv[FIRST]) d[vi] = INT_MAX;
 			else if(vi == uwv[THIRD]) d[vi] = INT_MAX - 1;
 			distances.push_back(make_pair(vi, d[vi]));
-			#ifdef DEBUG
-			cerr << "\tdistance(" << vi << ") = " << d[vi] << endl;
-			#endif
+			LOG4("\tdistance(", vi, ") = ", d[vi]);
 		}
 
 		// 1.c
 		sort(distances.begin(), distances.end(), vertex_distance_comparator());
 
 		#ifdef DEBUG
-		cerr << "[1 c.] Coloring order:" << endl;
+		LOG1("[1 c.] Coloring order:");
 		for(typename vector<pair<Vertex, int> >::iterator it = distances.begin();
 			it != distances.end(); ++it) {
-			cerr << "\tdistance(" << (*it).first << ") = " << (*it).second << endl;
+			LOG4("\tdistance(", (*it).first, ") = ", (*it).second);
 		}
 		#endif
 
@@ -91,10 +85,9 @@ namespace dColoring {
 		size_type colors = greedy_coloring(graph, order, color, distances);
 
 		#ifdef DEBUG
-		cerr << "[1 d.] Colors used: " << colors << endl;
+		LOG2("[1 d.] Colors used: ", colors);
 		BOOST_FOREACH(Vertex v, vertices(graph)) {
-			cerr << "\tVertex [" << v << "], color: " << get(color, v) <<
-				", distance: " << d[v] << endl; 
+			LOG6("\tVertex [", v, "], color: ", get(color, v), ", distance: ", d[v]); 
 		}
 		#endif
 

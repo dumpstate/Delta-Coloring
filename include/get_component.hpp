@@ -21,45 +21,35 @@ namespace dColoring {
 		Graph comp(0);
 
 		NameDict local_names;
-
 		BOOST_FOREACH(Edge e, edges(graph)) {
 			if(curr == get(componentMap, e)) {
-				std::cerr << "\tpair: " << e;
 				Vertex oldSource = source(e, graph);
 				Vertex oldTarget = target(e, graph);
 				Vertex newSource, newTarget;
 				
 				if(local_names.count(oldSource) > 0) {
-					std::cerr << "\tlocal_names(oldSource)";
 					newSource = local_names[oldSource];
 				} else {
-					std::cerr << "\t!local_names(oldSource)";
 					newSource = add_vertex(comp);
-					std::cerr << "\t writing to local_names " << newSource;
 					local_names[oldSource] = newSource;
-					std::cerr << "\t writing to names ";
 					names[newSource] = oldSource;
 				}
-				std::cerr << "lll";
+
 				if(local_names.count(oldTarget) > 0) {
-					std::cerr << "\tlocal_names(oldTarget)";
 					newTarget = local_names[oldTarget];
 				} else {
-					std::cerr << "\t!local_names(oldTarget)";
 					newTarget = add_vertex(comp);
 					local_names[oldTarget] = newTarget;
 					names[newTarget] = oldTarget;
 				}
-				std::cerr << " add_edge" << std::endl;
 				add_edge(newSource, newTarget, comp);
 			}
 		}
 
 		#ifdef DEBUG
-		std::cerr << "Component: " << curr << 
-			" size: " << num_vertices(comp) << std::endl;
+		LOG4("\tComponent:", curr, "size:", num_vertices(comp));
 		BOOST_FOREACH(Edge e, edges(comp)) {
-			std::cerr << "\tEdge: " << e << std::endl;
+			LOG2("\t\tEdge:", e);
 		}
 		#endif
 
