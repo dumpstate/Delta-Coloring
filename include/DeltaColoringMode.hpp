@@ -1,0 +1,11 @@
+#ifndef DELTACOLORING_DELTACOLORINGMODE
+#define DELTACOLORING_DELTACOLORINGMODE
+
+namespace dColoring{
+	enum DeltaColoringMode {
+		TO_STDOUT, 
+		TO_FILE
+	};
+}
+
+#endif //DELTACOLORING_DELTACOLORINGMODE
