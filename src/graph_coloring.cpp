@@ -1,4 +1,4 @@
-#define DEBUG
+//#define DEBUG
 
 #include "../include/log.h"
 #include "../include/types.h"
