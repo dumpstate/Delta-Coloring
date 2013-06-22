@@ -65,32 +65,3 @@ int main(int argc, char* argv[]){
 
 	return EXIT_SUCCESS;
 }
-
-
-/*
-	int num_col = component_delta_coloring(graph, color);
-	int max_degree = delta_g(graph);
-
-	/*property_map<Graph, edge_component_t>::type component
-		= get(edge_component, graph);
-	size_t num_comps = biconnected_components(graph, component);*/
-
-/*cerr << "Found: " << num_comps << " components." << endl;
-	typedef graph_traits<Graph>::vertex_descriptor vertex_t;
-	vector<vertex_t> art_points;
-	articulation_points(graph, back_inserter(art_points));
-	cerr << "Found: " << art_points.size() << " articulation points." << endl;
-
-	cerr << "graph A {\n" << "	node[shape=\"circle\"]\n";
-	for(size_t i = 0; i < art_points.size(); ++i) {
-		cerr << "  " << (char)(art_points[i] + 'A')
-				 << " [style=\"filled\", fillcolor=\"red\"];\n";
-	}	
-	
-	graph_traits<Graph>::edge_iterator ei, ei_end;
-	for(tie(ei, ei_end) = edges(graph); ei != ei_end; ++ei) {
-		cerr  << "  " << (char)(source(*ei, graph) + 'A') << " -- "
-					<< (char)(target(*ei, graph) + 'A')
-					<< "[label=\"" << component[*ei] << "\"]\n";
-	}
-	cerr << "}\n";*/
