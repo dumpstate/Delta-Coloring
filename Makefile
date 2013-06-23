@@ -1,8 +1,9 @@
 all: main
 
 main: src/ParameterParser.cpp src/graph_coloring.cpp
-	g++ -o deltaColoring 	\
+	g++ -static -o deltaColoring 	\
 		src/ParameterParser.cpp 					\
-		src/graph_coloring.cpp -Bstatic -lboost_graph
+		src/graph_coloring.cpp \
+		-pthread -lstdc++ /usr/local/lib/libboost_graph.a /usr/local/lib/libboost_regex.a
 
 .PHONY: main
