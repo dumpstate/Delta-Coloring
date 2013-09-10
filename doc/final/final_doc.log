@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Arch Linux) (format=pdflatex 2013.2.3)  10 SEP 2013 00:00
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Arch Linux) (format=pdflatex 2013.2.3)  10 SEP 2013 00:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -591,13 +591,13 @@ File: i1.pdf Graphic file (type pdf)
 Package pdftex.def Info: i1.pdf used on input line 102.
 (pdftex.def)             Requested size: 243.1623pt x 341.43306pt.
  [2 <./i1.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 120.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 118.
 
  (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 120.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 118.
 
 [3] (./final_doc.aux) ) 
 Here is how much of TeX's memory you used:
@@ -617,7 +617,7 @@ mi12.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/share/tex
 mf-dist/fonts/type1/public/pl/plr12.pfb></usr/share/texmf-dist/fonts/type1/publ
 ic/pl/plr17.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plti10.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/pl/pltt10.pfb>
-Output written on final_doc.pdf (3 pages, 68864 bytes).
+Output written on final_doc.pdf (3 pages, 69141 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
