@@ -1,0 +1,28 @@
+\documentclass[a4paper]{article}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\title{\textbf{Algorytmy Zaawansowane - kolorowanie $Delta(G)$ dokumentacja końcowa}}
+\author{\textbf{Albert Sadowski, Piotr Stanek}\\
+	Wydział Matematyki i Nauk Informacyjnych\\
+	Politechnika Warszawska}
+
+\begin{document}
+	\maketitle
+
+	\section{Zmiany względem dokumentacji wstępnej}
+
+	\section{Instrukcja użytkownika}
+
+
+	\section{Opis testów}
+
+	\section{Wnioski}
+
+	\section{Podział prac}	
+
+\end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Arch Linux) (format=pdflatex 2013.2.3)  8 SEP 2013 19:57
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Arch Linux) (format=pdflatex 2013.2.3)  10 SEP 2013 00:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -576,35 +576,51 @@ LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <8> on input line 15.
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <6> on input line 15.
-LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 23.
+LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 25.
 
 
 (/usr/share/texmf-dist/tex/latex/polski/ot4cmtt.fd
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./final_doc.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <i1.pdf, id=13, 340.27126p
+t x 477.785pt>
+File: i1.pdf Graphic file (type pdf)
+
+<use i1.pdf>
+Package pdftex.def Info: i1.pdf used on input line 102.
+(pdftex.def)             Requested size: 243.1623pt x 341.43306pt.
+ [2 <./i1.pdf>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 120.
+
+ (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 120.
+
+[3] (./final_doc.aux) ) 
 Here is how much of TeX's memory you used:
- 4341 strings out of 493488
- 58356 string characters out of 3146893
- 124885 words of memory out of 3000000
- 7579 multiletter control sequences out of 15000+200000
- 11484 words of font info for 34 fonts, out of 3000000 for 9000
+ 4366 strings out of 493488
+ 58720 string characters out of 3146893
+ 125883 words of memory out of 3000000
+ 7600 multiletter control sequences out of 15000+200000
+ 12483 words of font info for 36 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,6n,32p,340b,243s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/s
-hare/texmf-dist/fonts/enc/dvips/pl/pltt.enc}{/usr/share/texmf-dist/fonts/enc/dv
-ips/pl/plrm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/pl/plit.enc}{/usr/share/
-texmf-dist/fonts/enc/dvips/pl/plmi.enc}</usr/share/texmf-dist/fonts/type1/publi
-c/pl/plbx12.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plmi12.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/pl/plr12.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plr17.pfb>
-</usr/share/texmf-dist/fonts/type1/public/pl/plti10.pfb></usr/share/texmf-dist/
-fonts/type1/public/pl/pltt10.pfb>
-Output written on final_doc.pdf (1 page, 50084 bytes).
+{/usr/share/texmf-dist/fonts/enc/dvips/pl/pltt.enc}{/usr
+/share/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/share/texmf-dist/fonts/enc/
+dvips/pl/plit.enc}{/usr/share/texmf-dist/fonts/enc/dvips/pl/plmi.enc}</usr/shar
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/f
+onts/type1/public/pl/plbx12.pfb></usr/share/texmf-dist/fonts/type1/public/pl/pl
+mi12.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/share/tex
+mf-dist/fonts/type1/public/pl/plr12.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/pl/plr17.pfb></usr/share/texmf-dist/fonts/type1/public/pl/plti10.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/pl/pltt10.pfb>
+Output written on final_doc.pdf (3 pages, 68864 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 54 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
